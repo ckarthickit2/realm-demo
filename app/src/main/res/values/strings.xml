@@ -1,4 +1,9 @@
 <resources>
-  <string name="app_name">RealmExample</string>
+    <string name="app_name">RealmExample</string>
     <string name="add_todo">Add Todo</string>
+    <string name="title">Title: </string>
+    <string name="save_todo">Save Todo</string>
+    <string name="enter_title_for_todo_item">Enter TODO Title</string>
+    <string name="description">Description</string>
+    <string name="enter_todo_description">Enter TODO Description</string>
 </resources>
