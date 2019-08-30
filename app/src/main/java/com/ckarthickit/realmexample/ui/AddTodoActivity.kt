@@ -65,13 +65,15 @@ class AddTodoActivity : AppCompatActivity() {
                 todoDAo.copyOrUpdate(
                     TodoItem(
                         UUID.randomUUID().toString(),
-                        title = title.toString(),
+                        title = title.toString().capitalize(),
                         description = description.toString()
                     )
                 )
+                setResult(RESPONSE_CODE_SUCCESS)
                 true
             }
             else -> {
+                setResult(RESPONSE_CODE_FAILURE)
                 false
             }
         }

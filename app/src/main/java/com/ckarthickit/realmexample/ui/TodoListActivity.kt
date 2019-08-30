@@ -65,6 +65,7 @@ class TodoListActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        println("result for request {$requestCode} is {$resultCode}")
         when (requestCode) {
             REQUEST_CODE_ADD_ITEM -> {
                 when (resultCode) {
